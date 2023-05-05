@@ -1,0 +1,150 @@
+ashdjasdjasd
+asdjajsd
+sfjasf
+asdajsd
+asdajsd
+execve("/usr/bin/ls", 0xFFBFFD44, 0xFFBFFD4C)  argc = 1
+sysinfo(SI_MACHINE, "sun4u", 257)		= 6
+mmap(0x00000000, 32, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANON, -1, 0) = 0xFF3E0000
+mmap(0x00000000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANON, -1, 0) = 0xFF390000
+mmap(0x00000000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANON, -1, 0) = 0xFF380000
+memcntl(0xFF3A0000, 17900, MC_ADVISE, MADV_WILLNEED, 0, 0) = 0
+mmap(0x00000000, 8192, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANON, -1, 0) = 0xFF370000
+memcntl(0x00010000, 4032, MC_ADVISE, MADV_WILLNEED, 0, 0) = 0
+resolvepath("/usr/lib/ld.so.1", "/lib/ld.so.1", 1023) = 12
+resolvepath("/usr/bin/ls", "/usr/bin/ls", 1023)	= 11
+stat64("/usr/bin/ls", 0xFFBFF808)		= 0
+open("/var/ld/ld.config", O_RDONLY)		= 3
+fstat64(3, 0xFFBFF378)				= 0
+mmap(0x00000000, 148, PROT_READ, MAP_SHARED, 3, 0) = 0xFF360000
+close(3)					= 0
+stat64("/lib/libsec.so.1", 0xFFBFEF68)		= 0
+resolvepath("/lib/libsec.so.1", "/lib/libsec.so.1", 1023) = 16
+open("/lib/libsec.so.1", O_RDONLY)		= 3
+mmap(0x00010000, 32768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_ALIGN, 3, 0) = 0xFF350000
+mmap(0x00010000, 90112, PROT_NONE, MAP_PRIVATE|MAP_NORESERVE|MAP_ANON|MAP_ALIGN, -1, 0) = 0xFF330000
+mmap(0xFF330000, 57913, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_TEXT, 3, 0) = 0xFF330000
+mmap(0xFF340000, 13309, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_INITDATA, 3, 65536) = 0xFF340000
+mmap(0xFF344000, 5616, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_ANON, -1, 0) = 0xFF344000
+munmap(0xFF350000, 32768)			= 0
+close(3)					= 0
+memcntl(0xFF330000, 14336, MC_ADVISE, MADV_WILLNEED, 0, 0) = 0
+stat64("/lib/libc.so.1", 0xFFBFEF68)		= 0
+resolvepath("/lib/libc.so.1", "/lib/libc.so.1", 1023) = 14
+open("/lib/libc.so.1", O_RDONLY)		= 3
+mmap(0x00010000, 32768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_ALIGN, 3, 0) = 0xFF350000
+mmap(0x00010000, 1368064, PROT_NONE, MAP_PRIVATE|MAP_NORESERVE|MAP_ANON|MAP_ALIGN, -1, 0) = 0xFF180000
+mmap(0xFF180000, 1247157, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_TEXT, 3, 0) = 0xFF180000
+mmap(0xFF2C2000, 35965, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_INITDATA, 3, 1253376) = 0xFF2C2000
+mmap(0xFF2CC000, 1616, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_ANON, -1, 0) = 0xFF2CC000
+munmap(0xFF2B2000, 65536)			= 0
+munmap(0xFF350000, 32768)			= 0
+close(3)					= 0
+memcntl(0xFF180000, 146148, MC_ADVISE, MADV_WILLNEED, 0, 0) = 0
+stat64("/lib/libavl.so.1", 0xFFBFEF68)		= 0
+resolvepath("/lib/libavl.so.1", "/lib/libavl.so.1", 1023) = 16
+open("/lib/libavl.so.1", O_RDONLY)		= 3
+mmap(0x00010000, 14372, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_ALIGN, 3, 0) = 0xFF350000
+mmap(0x00010000, 81920, PROT_NONE, MAP_PRIVATE|MAP_NORESERVE|MAP_ANON|MAP_ALIGN, -1, 0) = 0xFF310000
+mmap(0xFF310000, 3316, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_TEXT, 3, 0) = 0xFF310000
+mmap(0xFF322000, 296, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_INITDATA, 3, 8192) = 0xFF322000
+munmap(0xFF312000, 65536)			= 0
+munmap(0xFF350000, 14372)			= 0
+close(3)					= 0
+memcntl(0xFF310000, 1128, MC_ADVISE, MADV_WILLNEED, 0, 0) = 0
+/1:	mmap(0x00010000, 24576, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANON|MAP_ALIGN, -1, 0) = 0xFF350000
+/1:	getcontext(0xFFBFF678)
+/1:	getrlimit(RLIMIT_STACK, 0xFFBFF658)		= 0
+/1:	getpid()					= 11942 [11941]
+/1:	setustack(0xFF352A88)
+/1:	brk(0x00027150)					= 0
+/1:	brk(0x00029150)					= 0
+/1:	stat64("/platform/SUNW,Sun-Fire-880/lib/libc_psr.so.1", 0xFFBFEF08) = 0
+/1:	resolvepath("/platform/SUNW,Sun-Fire-880/lib/libc_psr.so.1", "/platform/sun4u-us3/lib/libc_psr.so.1", 1023) = 37
+/1:	open("/platform/SUNW,Sun-Fire-880/lib/libc_psr.so.1", O_RDONLY) = 3
+/1:	mmap(0x00010000, 6600, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_ALIGN, 3, 0) = 0xFF300000
+/1:	munmap(0xFF302000, 4294965704)			Err#22 EINVAL
+/1:	close(3)					= 0
+/1:	time()						= 1668459219
+/1:	ioctl(1, TCGETA, 0xFFBFFC6C)			= 0
+/1:	ioctl(1, TIOCGWINSZ, 0x00026BB6)		= 0
+/1:	brk(0x00029150)					= 0
+/1:	brk(0x00033150)					= 0
+/1:	lstat64(".", 0xFFBFFBE8)			= 0
+/1:	openat(-3041965, ".", O_RDONLY|O_NDELAY|O_LARGEFILE) = 3
+/1:	fcntl(3, F_SETFD, 0x00000001)			= 0
+/1:	fstat64(3, 0xFFBFFAC8)				= 0
+/1:	getdents64(3, 0xFF354000, 8192)			= 1512
+/1:	getdents64(3, 0xFF354000, 8192)			= 0
+/1:	close(3)					= 0
+/1@1:	-> libc:printf(0x147d4, 0x2ba40, 0x26524, 0x26c00)
+/1:	ioctl(1, TCGETA, 0xFFBFDB64)			= 0
+/1:	fstat64(1, 0xFFBFDA80)				= 0
+/1@1:	<- libc:printf() = 6
+/1@1:	-> libc:printf(0x147d4, 0x2a570, 0x26524, 0x20)
+/1@1:	<- libc:printf() = 5
+/1:	write(1, " 1 0 . t x t            ".., 41)	= 41
+/1@1:	-> libc:printf(0x147d4, 0x2bc90, 0x26524, 0x26524)
+/1@1:	<- libc:printf() = 6
+/1@1:	-> libc:printf(0x147d4, 0x2b350, 0x26524, 0x20)
+/1@1:	<- libc:printf() = 8
+/1:	write(1, " 1 1 . t x t            ".., 44)	= 44
+/1@1:	-> libc:printf(0x147d4, 0x2bee0, 0x26524, 0x26524)
+/1@1:	<- libc:printf() = 6
+/1@1:	-> libc:printf(0x147d4, 0x2ac60, 0x26524, 0x20)
+/1@1:	<- libc:printf() = 4
+/1:	write(1, " 1 5 . t x t            ".., 40)	= 40
+/1@1:	-> libc:printf(0x147d4, 0x2aa10, 0x26524, 0x26524)
+/1@1:	<- libc:printf() = 5
+/1@1:	-> libc:printf(0x147d4, 0x2aeb0, 0x26524, 0x20)
+/1@1:	<- libc:printf() = 9
+/1:	write(1, " C P O i S              ".., 45)	= 45
+/1@1:	-> libc:printf(0x147d4, 0x29e80, 0x26524, 0x26524)
+/1@1:	<- libc:printf() = 9
+/1@1:	-> libc:printf(0x147d4, 0x28760, 0x26524, 0x20)
+/1@1:	<- libc:printf() = 3
+/1:	write(1, " D o k u m e n t y      ".., 39)	= 39
+/1@1:	-> libc:printf(0x147d4, 0x2b100, 0x26524, 0x26524)
+/1@1:	<- libc:printf() = 16
+/1@1:	-> libc:printf(0x147d4, 0x2b7f0, 0x26524, 0x20)
+/1@1:	<- libc:printf() = 7
+/1:	write(1, " L a b o r a t o r i a  ".., 43)	= 43
+/1@1:	-> libc:printf(0x147d4, 0x2a0d0, 0x26524, 0x26524)
+/1@1:	<- libc:printf() = 6
+/1@1:	-> libc:printf(0x147d4, 0x28510, 0x26524, 0x20)
+/1@1:	<- libc:printf() = 7
+/1:	write(1, " M u z y k a            ".., 43)	= 43
+/1@1:	-> libc:printf(0x147d4, 0x2a320, 0x26524, 0x26524)
+/1@1:	<- libc:printf() = 6
+/1@1:	-> libc:printf(0x147d4, 0x289b0, 0x26524, 0x20)
+/1@1:	<- libc:printf() = 2
+/1:	write(1, " O b r a z y            ".., 38)	= 38
+/1@1:	-> libc:printf(0x147d4, 0x2b5a0, 0x26524, 0x26524)
+/1@1:	<- libc:printf() = 33
+/1@1:	-> libc:printf(0x147d4, 0x292f0, 0x26524, 0x20)
+/1@1:	<- libc:printf() = 3
+/1:	write(1, " O p r a c o w a n i e  ".., 39)	= 39
+/1@1:	-> libc:printf(0x147d4, 0x29790, 0x26524, 0x26524)
+/1@1:	<- libc:printf() = 7
+/1@1:	-> libc:printf(0x147d4, 0x28e50, 0x26524, 0x20)
+/1@1:	<- libc:printf() = 13
+/1:	write(1, " P o b r a n e          ".., 49)	= 49
+/1@1:	-> libc:printf(0x147d4, 0x29c30, 0x26524, 0x26524)
+/1@1:	<- libc:printf() = 9
+/1@1:	-> libc:printf(0x147d4, 0x28c00, 0x26524, 0x20)
+/1@1:	<- libc:printf() = 2
+/1:	write(1, " P u b l i c z n y      ".., 38)	= 38
+/1@1:	-> libc:printf(0x147d4, 0x29540, 0x26524, 0x26524)
+/1@1:	<- libc:printf() = 6
+/1@1:	-> libc:printf(0x147d4, 0x290a0, 0x26524, 0x20)
+/1@1:	<- libc:printf() = 2
+/1:	write(1, " P u l p i t            ".., 38)	= 38
+/1@1:	-> libc:printf(0x147d4, 0x2a7c0, 0x26524, 0x26524)
+/1@1:	<- libc:printf() = 3
+/1@1:	-> libc:printf(0x147d4, 0x282c0, 0x26524, 0x20)
+/1@1:	<- libc:printf() = 7
+/1:	write(1, " S C R                  ".., 43)	= 43
+/1@1:	-> libc:printf(0x147d4, 0x299e0, 0x26524, 0x26524)
+/1@1:	<- libc:printf() = 8
+/1:	write(1, " S z a b l o n y\n", 9)		= 9
+/1:	_exit(0)

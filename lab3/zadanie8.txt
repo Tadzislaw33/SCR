@@ -1,0 +1,5 @@
+while true 
+do
+	sh zadanie8.sh &
+	sleep 1
+done

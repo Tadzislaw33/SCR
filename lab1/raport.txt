@@ -1,0 +1,38 @@
+Tadeusz Dworecki 259281
+Raport lab1
+
+1. Praca z edytorami okienkowym gedit i terminalowym nano, otwarcie i przeglądanie pliku
+   pdf programem xpdf.
+2. Praca zdalna przez protokół ssh z maszyny wirtualnej z systemem linux mint
+   Poprawne skopiowanie plików z lokalnego komputera na serwer 
+   Częściowo poprawne skopiowanie z serwera na komputer gdyż udało się tylko z głównego
+   katalogu z podfolderów już nie.
+3. polecenia systemu unix
+W pełni: 
+	-1  System plików Unixa i polecenia na katalogach
+	-2  Operacje na plikach 
+	-3  Prawa dostępu do plików
+	-4  Operacje na procesach
+	-5  Kasowanie procesów
+		faktycznie polecenie kill -9 -1 jest samobójcze
+	-6  Uzyskiwanie inforamcji o urzytkownikach włączonych do systemu
+	-7  Uzyskiwanie informacji o historii włączeń do systemu
+	-9  Proste skrypty  
+		stworzenie skryptu z (set -x)
+	-11 Program find
+		find /etc -size -1k -mtime -3
+		find /etc -size -250k -mtime +30 -mtime -90
+	-13 Dalsze operacje na plikach - linki
+	-14 Linki symboliczne 
+Częściowo:
+	-8  Uzyskiwanie informacji o istniejących kontach użytkowników 
+		bazy nie istnieją
+	-10 Dalsze ćwiczenia ze skryptami
+		udało się zastosować argumenty ale bez pytania echo i plików typu *.c
+	-12 Program tar
+		pakowanie i rozpakowywanie folderów i plików. Problem z maskami i linkami
+	-15 Prawa dostępu - podstawowe 9 bitów 
+		faktycznie zmiana maski daje rózne wynikowe prawa dostępu
+		ale nie wiem skąd te liczby 777, 666, 000 , 022
+
+

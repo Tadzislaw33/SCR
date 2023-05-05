@@ -1,0 +1,6 @@
+Programowanie procesów - komunikacja przez potoki
+tekst
+.
+.
+.
+  

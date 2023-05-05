@@ -1,0 +1,8 @@
+mega
+11 i watki
+
+pdf
+lista 7
+
+
+zadanie 4 pthread_exit zrobic i wyslac w raporcie

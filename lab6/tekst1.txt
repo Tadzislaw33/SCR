@@ -1,0 +1,7 @@
+Programowanie procesów - komunikacja przez potoki
+Zad.1. (8 punktów - na zajęciach)
+tekst1
+.
+.
+.
+  

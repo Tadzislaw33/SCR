@@ -1,0 +1,57 @@
+zadanie 2 na zajeciach
+funkcja write()
+
+zadanie 3 na zajeciach
+read(3,.....) 
+
+zadanie 4 na zajeciach
+strace ./a.out wyswietlone hello, tdworeck
+getenv nie ma
+ltrace ./a.out
+jest getenv i printf
+ltrace sledzi biblioteki a strace sygnaly
+
+zadanie 5 
+Do znalezienia plików konfiguracyjnych programu bash wykorzystałem komendy 
+strace bash 2> 5.txt 
+cat 5.txt | grep open | grep config
+Czyli zapisałem wyjście komendy strace bash do pliku i następnie wyciąłem z niego fragenty zawierające config
+W wyniku nie wyswietliły się żadne pliki konfiguracyjne.
+
+zadanie 6
+Do sprawdzenia czy plik otwarty w programie pico jest ciągle otwarty wykorzystałem komendy
+strace pico 5.txt 2> 6.txt
+cat 6.txt | grep 5.txt | grep open     
+Komendy wykonywałem dwa razy, raz otwarcie po czym od razu zamknięcie pliku plik otwierał się raz do zapisu i raz do odczytu. Drugi raz plik był edytowany i otwierał się raz do zapisu, raz do odczytu i potem dwa razy do zapisu. Wynika z tego, że plik nie jest cały czas otwarty podczas edycji.  
+ 
+zadanie 7
+Program został zabity przez sygnał SIGSEGV. Otrzymanie tego sygnału oznacza że w programie wystąpiło naruszenie ochrony pamięci. Program wychodzi za tablicę ponieważ index zwiększa się w nieskończoność. Po wpisaniu w pętlę for(index; index<22;index++) program działa poprawnie.
+
+zadanie 9 na zaejciach
+funkcja write()
+
+zadanie 10
+Aby wyświetlić pliki konfiguracyjne powłowki bash należy wykonać poniższe polecenia czyli uruchamiamy bash za pomocą truss i przekierowujemy jego wyjscie dla błędów do pliku. Na początku chciałem po prostu przekierować wyjście do pliku w ten sposób truss bash > 10.txt ale wtedy truss bash wyświetlał się na stdout i nie dało się tego przerwać
+truss bash 2> 10.txt
+cat 10.txt | grep open | grep config
+Po wykonaniu powyższego polecenia czyli otwieramy plik 10.txt poleceniem cat i wycinamy co nas interesuje otrzymując pliki konfiguracyjne okazuje się, że jest tylko jeden.
+open("/var/ld/ld.config", O_RDONLY)             = 3
+
+zadanie 11
+Aby policzyć liczbę wywołań funkcji prinf przez program ls należy wykonać poniższe polecenia używamy flagi -u polecenia truss aby wybrać tylko biblioteki funkcji printf programu ls i przekierowujemy do pliku. Po wykonaniu tego polecenia wyświetlają się pliki i foldery z obecnego katalogu. 
+truss -u libc:printf ls 2> 11.txt
+cat 11.txt | grep printf | wc -l
+Otwieramy zapiany wcześniej plik poleceniem cat i wycinamy grep informacje zawierające printf otrzymujemy liczbę 54 która jest dwa razy większa niż liczba plików w katalogu aby sprawdzić dlaczego tak jest uruchamiam polecenie 
+cat 11.txt | grep printf
+Okazuje się że polecenie printf jest wyświetla się dwukrotnie dla każdego pliku jest tak dlatego, że raz wyświetla się printf z argumentami które przyjmuje a drugi raz z wartością którą zwraca.
+ 
+zadanie 12
+Do sprawdzenia czy plik otwarty w programie nano(edytor pico nie chce działać na diablo) jest ciągle otwarty wykorzystałem komendy
+truss pico 12.txt 2> 11.txt
+cat 11.txt | grep 12.txt | grep open     
+Komendy wykonywałem dwa razy, raz otwarcie po czym od razu zamknięcie pliku plik otwierał się raz do odczytu i raz do zapisu. Drugi raz plik był edytowany i otwierał się raz do odczytu i dwa razy do zapisu. Wynika z tego, że plik nie jest cały czas otwarty podczas edycji.
+
+
+
+
+
