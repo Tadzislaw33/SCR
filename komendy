@@ -1,0 +1,13 @@
+scp plik tdworeck@panamint.kcir.pwr.edu.pl:SCR z komputera na panaminta
+scp tdworeck@panamint.kcir.pwr.edu.pl:plik ~/ z panaminta na komputer
+ssh tdworeck@panamint.kcir.pwr.edu.pl
+
+rozmiar do 1kb utworzone  do 3 dni temu
+find /etc -size -1k -mtime -3
+rozmiar do 250kb utworozne między 30 a 90 dni temu
+find /etc -size -250k -mtime +30 -mtime -90
+
+spakowanie
+tar -cvf nazwa_tara plik1 plik2 plik3
+wypakowanie
+tar -xvf nazwa_tara                 
